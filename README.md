@@ -4,6 +4,6 @@ This is a simple script to execute some of the go pipelines for a slot refresh f
 
 You should be prompted to enter a go server unless you set the GO_SERVER variable in your shell.
 
-export GO_SERVER="<host>"
+export GO_SERVER="[enter hostname]" <- preferably the FQDN of the GO master server.
 
 ./go.sh
