@@ -1,3 +1,4 @@
+read -p 'Go Server: ' GO_SERVER
 read -p 'Slot: ' SLOT
 read -p 'Banner: ' BANNER
 read -p 'User: ' USERID
@@ -68,7 +69,7 @@ DATA=$(genNginxData)
 for i in `cat nginx.txt`
 do
   echo "Requesting deploy for $i"
-  curl --url "http://go.digital.hbc.com/go/api/pipelines/$i/schedule" \
+  curl --url "http://$GO_SERVER:8153/go/api/pipelines/$i/schedule" \
        -u "$USERID:$PASSWD" \
        -H 'Accept: application/vnd.go.cd.v1+json' \
        -H 'Content-Type: application/json' \
@@ -79,7 +80,7 @@ done
 
 DATA=$(getGlassieData)
 #Glassie
-curl --url "http://go.digital.hbc.com/go/api/pipelines/frontend-glassie-slot-deploy-release/schedule" \
+curl --url "http://$GO_SERVER:8153/go/api/pipelines/frontend-glassie-slot-deploy-release/schedule" \
      -u "$USERID:$PASSWD" \
      -H 'Accept: application/vnd.go.cd.v1+json' \
      -H 'Content-Type: application/json' \
