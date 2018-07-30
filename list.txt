@@ -1,9 +1,7 @@
-slot_toggle-service-deploy
 slot_product-detail-service-deploy
 slot_product-service-deploy
 slot_price-service-deploy
 slot_inventory-service-deploy
-slot_fitpredictor-service-deploy
 slot_reviews-service-deploy
 slot_questionanswer-service-deploy
 slot_promo-service-deploy
@@ -27,9 +25,10 @@ slot_product-grid-service-deploy
 slot_account-service-deploy
 slot_localization-service-deploy
 slot_cart-service-deploy
-slot_preference-service-deploy
 slot_address-validation-service-deploy
+slot_address-service-deploy
 slot_email-subscription-interface-service-deploy
+slot_email-marketing-service-deploy
 slot_profile-service-deploy
 slot_payment-service-deploy
 slot_payment-method-service-deploy
@@ -38,3 +37,6 @@ slot_order-service-deploy
 slot_address-service-deploy
 slot_user-authentication-service-deploy
 slot_blue-martini-service-deploy
+slot_omsinventory_service-deploy
+slot_oms-order-service-deploy
+slot_shoprunner-service-deploy
