@@ -1,0 +1,2 @@
+aws_slot_nginx_services_deploy
+aws_slot_nginx_glassie_deploy

@@ -1,0 +1,8 @@
+slot_favorite-service-deploy
+slot_masterpass-checkout-service-deploy
+slot_product-detail-service-deploy
+slot_product-service-deploy
+slot_promo-service-deploy
+slot_price-service-deploy
+slot_cart-service-deploy
+
